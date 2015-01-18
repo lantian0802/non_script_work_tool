@@ -23,14 +23,14 @@ public class ImageTypeChecker {
         String hv4 = Integer.toHexString(v4);
         String type1 = hv1 + hv2;
         String type2 = hv1 + hv2 + hv3 + hv4;
-        // gif 47 49 46 38
-        // .bmp 42 4d
-        // jpg ffd8
+            // gif 47 49 46 38
+            // .bmp 42 4d
+            // jpg ffd8
 
-        // .png 89 50 4e 47
-        if ("ffd8".equals(type1)) {  //.jpg
-            return true;
-        } else if ("424d".equals(type1)) { //.bmp
+            // .png 89 50 4e 47
+            if ("ffd8".equals(type1)) {  //.jpg
+                return true;
+            } else if ("424d".equals(type1)) { //.bmp
             return true;
         } else if ("89504e47".equals(type2)) { //.png
             return true;
