@@ -26,6 +26,7 @@ public class ImageTypeChecker {
         // gif 47 49 46 38
         // .bmp 42 4d
         // jpg ffd8
+
         // .png 89 50 4e 47
         if ("ffd8".equals(type1)) {  //.jpg
             return true;
